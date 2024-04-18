@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid fixed-top px-0">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex bg-dark">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="bi bi-geo-alt-fill"></i>123 Street, New York, USA</small>
+                <small class="ms-4"><i class="bi bi-envelope-fill"></i>info@example.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-body ms-3" href=""><i class="bi bi-facebook"></i></a>
+                <a class="text-body ms-3" href=""><i class="bi bi-twitter"></i></a>
+                <a class="text-body ms-3" href=""><i class="bi bi-linkedin"></i></a>
+                <a class="text-body ms-3" href=""><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 bg-white " style="visibility: visible;">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0 lora">
+                <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse opensans" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="products.html" class="nav-item nav-link">Products</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn-sm-square text-dark bg-white rounded-circle ms-3" href="">
+                        <small class="bi bi-search"></small>
+                    </a>
+                    <a class="btn-sm-square text-dark bg-white rounded-circle ms-3" href="">
+                        <small class="bi bi-person"></small>
+                    </a>
+                    <a class="btn-sm-square text-dark bg-white rounded-circle ms-3" href="">
+                        <small class="bi bi-bag"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- carousel-banner -->
+    <div class="container-fluid p-0 mb-5"  style="visibility: visible;">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-1-banner.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-2 mb-5 lora color-111 fw-bold">Organic Food Is Good For Health</h1>
+                                    <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 opensans" data-bs-target="#modal" data-bs-toggle="modal">Products</a>
+                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3 opensans" data-bs-target="#freeoffcanvs" data-bs-toggle="offcanvas">Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-2-banner.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-2 mb-5 lora color-111 fw-bold">Natural Food Is Always Healthy</h1>
+                                    <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 opensans" data-bs-target="#modal" data-bs-toggle="modal" >Products</a>
+                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3 opensans"  data-bs-target="#freeoffcanvs" data-bs-toggle="offcanvas">Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal" id="modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered"> 
+          <div class="modal-content">
+            <div class="modal-header">Benefits of Our Green Foods...</div>
+        
+          <div class="modal-body"> 
+            <div class="ratio ratio-21x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bOCm_9f8cOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+            <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+       </div>
+    </div>
+     <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" data-bs-backdrop="static" id="freeoffcanvs">
+    <div class="offcanvas-header">
+      <span class="fs-4">Our services..🛠</span>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="Offcanvas-body">
+      <h2 class="fs-5  text-primary ps-3">👉Online Services are available 24/7.</h2>
+       <br>
+      <h2 class="fs-5 text-primary ps-3">👉We provide vegetables which are certified by AGMARK.</h2>
+       <br>
+      <h2 class="fs-5 text-primary ps-3">👉We personaly help our Customers to select appropriate food.</h2>
+      <br>
+      <h2 class="fs-5 text-primary ps-3">👉We have the most qualified farmers.</h2>
+      <br>
+      <h2 class="fs-5 text-primary ps-3">👉We have faith in our Customers.</h2>
+      <br>
+    </div>
+  </div>
+    <!-- About-section -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow animate__animated animate__fadeInLeft" style="visibility: visible;">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="img/about-man.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__fadeInRight" style="visibility: visible;">
+                    <h1 class="display-5 mb-4 color-111 lora fw-bold about">Best Organic Fruits And Vegetables</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="opensans"><i class="bi bi-check"></i>Tempor erat elitr rebum at clita</p>
+                    <p class="opensans"><i class="bi bi-check"></i>Aliqu diam amet diam et eos</p>
+                    <p class="opensans"><i class="bi bi-check"></i>Clita duo justo magna dolore erat amet</p>
+                    <button class="btn btn-primary rounded-pill py-3 px-5 mt-3 opensans" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features-section -->
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow animate__animated animate__fadeInUp"style="max-width: 500px; visibility: visible;">
+                <h1 class="display-5 mb-3 lora fw-semibold">Our Features</h1>
+                <p class="opensans">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" style="visibility: visible;">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5 wow animate__animated animate__fadeInUp">
+                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
+                        <h4 class="mb-3 lora fw-600">Natural Process</h4>
+                        <p class="mb-4 opensans fw-400">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <a class="btn btn-primary border-2 py-2 px-4 rounded-pill opensans" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" style="visibility: visible;">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5 wow animate__animated animate__fadeInUp">
+                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <h4 class="mb-3 lora fw-600">Organic Products</h4>
+                        <p class="mb-4 opensans fw-400">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <a class="btn btn-primary border-2 py-2 px-4 rounded-pill opensans" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" style="visibility: visible;">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5 wow animate__animated animate__fadeInUp">
+                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <h4 class="mb-3 lora fw-600">Biologically Safe</h4>
+                        <p class="mb-4 opensans fw-400">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <a class="btn btn-primary border-2 py-2 px-4 rounded-pill opensans" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products-section -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="section-header text-start mb-5 wow animate__animated animate__fadeInUp" style="max-width: 500px;">
+                        <h1 class="display-5 mb-3 lora fw-semibold">Our Products</h1>
+                        <p class="opensans">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-start text-lg-end wow animate__animated animate__fadeInRight" style="visibility: visible;">
+                    <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                        <li class="nav-item me-2">
+                            <a class="btn btn-primary border-2 active" data-bs-toggle="pill" href="#tab-1">Vegetable</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="btn btn-primary border-2" data-bs-toggle="pill" href="#tab-2">Fruits </a>
+                        </li>
+                        <li class="nav-item me-0">
+                            <a class="btn btn-primary border-2" data-bs-toggle="pill" href="#tab-3">Fresh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane show p-0 active wow animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Tomato</a>
+                                    <span class="text-primary me-1">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6"  style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pineapple.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Pineapple</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/chilli.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Chilli</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/strawberry.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Strawberry</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cucumber.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Cucumber</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 " style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato-orange.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Coloured-Tomato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/potato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Potato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible; ">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/banana.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Banana</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center" style="visibility: visible;">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane show p-0">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Tomato</a>
+                                    <span class="text-primary me-1">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6"  style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pineapple.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Pineapple</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/chilli.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Chilli</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/strawberry.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Strawberry</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cucumber.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Cucumber</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 " style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato-orange.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Coloured-Tomato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/potato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Potato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible; ">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/banana.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Banana</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center" style="visibility: visible;">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane show p-0">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Tomato</a>
+                                    <span class="text-primary me-1">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6"  style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/pineapple.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Pineapple</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                            </small>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/chilli.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Chilli</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                         <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/strawberry.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Strawberry</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i></i>View detail</a>
+                                    </small>
+                        <small class="w-50 text-center py-2">
+                            <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                        </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/cucumber.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Cucumber</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 " style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/tomato-orange.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2 text-decoration-none text-dark lora" href="">Fresh Coloured-Tomato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility:visible;">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/potato.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Potato</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6" style="visibility: visible; ">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/banana.jpg" alt="">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block text-decoration-none text-dark lora h5 mb-2" href="">Fresh Banana</a>
+                                    <span class="text-primary me-1 opensans">$19.00</span>
+                                    <span class="text-body text-decoration-line-through opensans">$29.00</span>
+                                </div>
+                                <div class="d-flex border-top opensans">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href=""><i class="bi bi-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="bi bi-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center" style="visibility:visible;">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visit-Firm-section -->
+    <div class="container-fluid bg-primary bg-icon mt-5 py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-7 wow animate__animated animate__fadeInLeft" style="visibility: visible;">
+                    <h1 class="display-5 text-white mb-3 lora fw-semibold">Visit Our Firm</h1>
+                    <p class="text-white mb-0 opensans">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                </div>
+                <div class="col-md-5 text-md-end wow animate__animated animate__fadeInRight" style="visibility: visible;">
+                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5 opensans" href="">Visit Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- textimonial-section -->
+    <section class="p-100">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow animate__animated animate__fadeInUp" style="max-width: 500px; visibility: visible;">
+                <h1 class="display-5 mb-3 lora fw-semibold">Customer Review</h1>
+                <p class="opensans">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="">
+                            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                                <i class="bi bi-quote text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 rounded-circle w-25" src="img/client-1.jpg" alt="" >
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Client Name</h5>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                                <i class="bi bi-quote text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 rounded-circle w-25" src="img/client-1.jpg" alt="">
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Client Name</h5>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="">
+                            <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                                <i class="bi bi-quote text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 rounded-circle w-25" src="img/client-1.jpg" alt="">
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">Client Name</h5>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                            <i class="bi bi-quote text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                            <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 rounded-circle w-25" src="img/client-1.jpg" alt="">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+               
+            </div>
+        </div>
+    </section>
+     <!-- BLOG-SECTION -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow animate__animated animate__fadeInUp" style="max-width: 500px; visibility: visible;">
+                <h1 class="display-5 mb-3 lora fw-semibold">Latest Blog</h1>
+                <p class="opensans">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp"  style="visibility: visible;">
+                    <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                    <div class="bg-light p-4 opensans">
+                        <a class="d-block h5 lh-base mb-4 text-decoration-none text-dark lora" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="bi bi-person-fill text-primary me-2"></i>Admin</small>
+                            <small class="me-3"><i class="bi bi-calendar-fill text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp"  style="visibility: visible;">
+                    <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                    <div class="bg-light p-4 opensans">
+                        <a class="d-block h5 lh-base mb-4 text-decoration-none text-dark lora" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="bi bi-person-fill text-primary me-2"></i>Admin</small>
+                            <small class="me-3"><i class="bi bi-calendar-fill text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__backInUp" style="visibility: visible;">
+                    <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                    <div class="bg-light p-4 opensans">
+                        <a class="d-block h5 lh-base mb-4 text-decoration-none text-dark lora" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="bi bi-person-fill text-primary me-2"></i>Admin</small>
+                            <small class="me-3"><i class="bi bi-calendar-fill text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5" style="visibility: visible;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand ms-4 ms-lg-0 lora">
+                        <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
+                    </a>
+                    <p class="opensans">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 opensans" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 opensans" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 opensans" href=""><i class="bi bi-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0 opensans" href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4 lora">Address</h4>
+                    <p><i class="bi bi-geo-alt-fill me-3 opensans"></i>123 Street, New York, USA</p>
+                    <p><i class="bi bi-telephone-fill me-3 opensans"></i>+012 345 67890</p>
+                    <p><i class="bi bi-envelope-fill me-3 opensans"></i>foody@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4 lora">Quick Links</h4>
+                    <a class="btn btn-link bi bi-caret-right-fill text-decoration-none opensans" href="">About Us</a>
+                    <a class="btn btn-link bi bi-caret-right-fill text-decoration-none opensans" href="">Contact Us</a>
+                    <a class="btn btn-link bi bi-caret-right-fill text-decoration-none opensans" href="">Our Services</a>
+                    <a class="btn btn-link bi bi-caret-right-fill text-decoration-none opensans" href="">Terms &amp; Condition</a>
+                    <a class="btn btn-link bi bi-caret-right-fill text-decoration-none opensans" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4 lora">Newsletter</h4>
+                    <p class="opensans">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright opensans">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By Krishnarani Patra</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pointer js -->
+    <span class="cursor"></span>
+
+
+     <!-- Back to Top -->
+     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+        class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        const cursor = document.querySelector(".cursor");
+document.body.addEventListener("mousemove", ({ clientX, clientY }) => {
+  cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+});
+
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        }
+    }
+})
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
+        });
+      </script>
+</body>
+</html>
